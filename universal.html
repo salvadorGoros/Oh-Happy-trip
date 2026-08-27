@@ -1,68 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Universal</title>
+    <title>Universal - Oh Happy trip</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
     <link href="./style.css" rel="stylesheet" />
 </head>
 <body class="fondo">
-    <div
-      style="
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: rgb(183, 197, 224);
-        gap: 20px;
-        margin-top: 20px;
-      "
-    >
-      <a href="/" class="estilos"
-        ><h1">Oh Happy trip</h1></a
-      >
-      <a href="/disney.html" class="estilos" style=""> Disney </a>
-      <a href="/universal.html" class="header-btn">Universal</a>
-      <a href="/cruceros.html" class="estilos"> Cruceros </a>
-      <a href="/playas.html" class="estilos"> Playas </a>
-      <a href="/certificate.html" class="estilos"> Certificate </a>
+
+    <!-- EFECTO FUEGOS ARTIFICIALES -->
+    <div class="fuegos-artificiales">
+      <div class="fuego" style="left: 20%; animation-delay: 0s;"></div>
+      <div class="fuego" style="left: 50%; animation-delay: 1.5s;"></div>
+      <div class="fuego" style="left: 80%; animation-delay: 0.8s;"></div>
+      <div class="fuego" style="left: 35%; animation-delay: 2.2s;"></div>
     </div>
-<div class="carrusel-contenedor">
-  <div class="carrusel-fotos">
-    <img src="epic.jpg" alt="Castillo Disney">
-    <img src="uni-stdios.webp" alt="Viaje 2">
-    <img src="island.webp" alt="Viaje 3">
-    <img src="volcano.webp" alt="Castillo Disney">
-  </div>
-</div>
-
-<p style="padding: 0.5rem; border: 2px; font-size: 20px; text-align: center;
-background-color: rgb(183, 197, 224);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 20px;">
-        ¡Presionael boton para hacer la cotización de tu proximo viaje a Universal!
-      </p>
+    
+    <!-- HEADER CENTRADO -->
+    <div class="estiloHeader">
+      <a href="/" class="header-btn"><h1>Oh Happy trip</h1></a>
       
-      <div style="display: flex; justify-content: center; align-items: center; width: 100%; margin: 20px 0;">
-  
-  <a href="https://docs.google.com/forms/d/1jw-H-l55k00QfMgiX-eQB4tN_gt27RUaKWCRhgekV5g/edit" target="_blank" style="text-decoration: none;">
-    <img 
-      src="Universal-Logo.png" 
-      alt="Mis Redes" 
-      style="
-        width: 100px;           
-        height: auto;          
-        display: block; 
-        transition: transform 0.3s ease; 
-        cursor: pointer;
-      "
-      onmouseover="this.style.transform='scale(1.1)'" 
-      onmouseout="this.style.transform='scale(1)'"
-    >
-  </a>
+      <div class="botones-nav">
+        <a href="/disney.html" class="estilos"> Disney </a>
+        <!-- Pestaña Activa -->
+        <a href="/universal.html" class="estilos" style="background: linear-gradient(135deg, rgba(89, 46, 113, 0.95), rgba(38, 208, 206, 0.95)); border-color: transparent; color: white; box-shadow: 0 0 15px rgba(38, 208, 206, 0.6);">Universal</a>
+        <a href="/cruceros.html" class="estilos"> Cruceros </a>
+        <a href="/playas.html" class="estilos"> Playas </a>
+        <a href="/certificate.html" class="estilos"> Certificate </a>
+      </div>
+    </div>
 
-</div>
+    <!-- CARRUSEL -->
+    <div class="carrusel-contenedor">
+      <div class="carrusel-fotos">
+        <img src="uni-stdios.webp" alt="Epic Universe">
+        <img src="epic.jpg" alt="Universal Studios">
+        <img src="island.png" alt="Islands of Adventure">
+        <img src="volcano.webp" alt="Volcano Bay">
+        <img src="uni-stdios.webp" alt="Epic Universe">
+      </div>
+    </div>
+
+    <!-- INFORMACIÓN UNIVERSAL -->
+    <div class="contenedor-tarjetas">
+      <div class="tarjeta-info">
+        <i class="fa-solid fa-earth-americas" style="color: #0575E6;"></i>
+        <h3>Universal Orlando</h3>
+        <p>Hogar de 3 parques épicos: Universal Studios, Islands of Adventure y el parque acuático Volcano Bay. ¡Y muy pronto el nuevo Epic Universe!</p>
+      </div>
+      
+      <div class="tarjeta-info">
+        <i class="fa-solid fa-film" style="color: #ff9966;"></i>
+        <h3>Universal Hollywood</h3>
+        <p>La cuna del cine en California. Vive el legendario Studio Tour por sets de películas reales y sumérgete en el increíble Super Nintendo World.</p>
+      </div>
+
+      <div class="tarjeta-info">
+        <i class="fa-solid fa-bolt" style="color: #f6d365;"></i>
+        <h3>Acción y Magia</h3>
+        <p>Camina por el Callejón Diagon, escapa de los dinosaurios de Jurassic World y conviértete en el protagonista de tus películas favoritas.</p>
+      </div>
+    </div>
+
+      
+    <!-- BOTÓN DE ACCIÓN ELEGANTE -->
+    <div style="display: flex; justify-content: center; margin: 20px 0 60px 0; position: relative; z-index: 10;">
+      <a href="https://docs.google.com/forms/d/1jw-H-l55k00QfMgiX-eQB4tN_gt27RUaKWCRhgekV5g/edit" target="_blank" class="btn-cotizar universal">
+        <i class="fa-solid fa-earth-americas"></i> Cotizar Universal
+      </a>
+    </div>
+
+<!-- CÓDIGO JAVASCRIPT PARA EL POLVO DE TINKERBELL -->
+    <script>
+      document.addEventListener("mousemove", function(e) {
+        // Generamos una chispa solo algunas veces para no saturar la página y que se vea natural
+        if (Math.random() > 0.4) {
+          let chispa = document.createElement("span");
+          chispa.className = "chispa-magica";
+          
+          // Coloca la chispa exactamente en la punta del mouse
+          chispa.style.left = e.clientX + "px";
+          chispa.style.top = e.clientY + "px";
+          
+          // Calcula una dirección aleatoria para que el polvo "caiga" y se esparza
+          let tx = (Math.random() - 0.5) * 60 + "px"; // Movimiento a los lados
+          let ty = (Math.random() * 60) + 20 + "px";  // Movimiento hacia abajo por gravedad
+          chispa.style.setProperty("--tx", tx);
+          chispa.style.setProperty("--ty", ty);
+          
+          // Dibuja la chispa en la pantalla
+          document.body.appendChild(chispa);
+          
+          // Borra la chispa después de 800 milisegundos (cuando termina su animación)
+          setTimeout(() => {
+            chispa.remove();
+          }, 800);
+        }
+      });
+    </script>
+    <!-- CÓDIGO JAVASCRIPT PARA EFECTOS DEL MOUSE -->
+    <script>
+      // 1. POLVO DE TINKERBELL AL MOVER EL MOUSE
+      document.addEventListener("mousemove", function(e) {
+        if (Math.random() > 0.4) {
+          let chispa = document.createElement("span");
+          chispa.className = "chispa-magica";
+          chispa.style.left = e.clientX + "px";
+          chispa.style.top = e.clientY + "px";
+          
+          let tx = (Math.random() - 0.5) * 60 + "px"; 
+          let ty = (Math.random() * 60) + 20 + "px";  
+          chispa.style.setProperty("--tx", tx);
+          chispa.style.setProperty("--ty", ty);
+          
+          document.body.appendChild(chispa);
+          
+          setTimeout(() => {
+            chispa.remove();
+          }, 800);
+        }
+      });
+
+      // 2. NUEVO: FUEGO ARTIFICIAL AL HACER CLIC
+      document.addEventListener("click", function(e) {
+        let explosion = document.createElement("div");
+        explosion.className = "explosion-click";
+        
+        // Colocamos la explosión justo en las coordenadas del clic
+        explosion.style.left = e.clientX + "px";
+        explosion.style.top = e.clientY + "px";
+        
+        document.body.appendChild(explosion);
+        
+        // Removemos el elemento después de 800ms (cuando acaba la animación)
+        setTimeout(() => {
+          explosion.remove();
+        }, 800);
+      });
+    </script>
+
+    <!-- MENÚ FLOTANTE EXPANDIBLE -->
+    <div class="menu-flotante">
+      
+      <!-- Botón principal (Siempre visible) -->
+      <div class="btn-flotante-principal">
+        <i class="fa-solid fa-comments"></i>
+      </div>
+      
+      <!-- Redes que salen hacia arriba al pasar el mouse -->
+      <div class="redes-ocultas">
+        <a href="https://api.whatsapp.com/send?phone=525519647258" target="_blank" class="btn-flotante-red wa" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="https://instagram.com/andylugoh.happytrip" target="_blank" class="btn-flotante-red ig" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://tiktok.com/@andylugohappytrip" target="_blank" class="btn-flotante-red tk" title="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+        <a href="https://www.facebook.com/share/14GoXGc35Pu/?mibextid=wwXIfr" target="_blank" class="btn-flotante-red fb" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://www.youtube.com/@andrealugoh.happytrip" target="_blank" class="btn-flotante-red yt" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+      
+    </div>
+  </body> <!-- Aquí termina tu documento -->
+  </body> <!-- Aquí termina tu documento -->
+</html>
 
 </body>
 </html>

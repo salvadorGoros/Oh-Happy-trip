@@ -1,68 +1,135 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Certificate</title>
- <link href="./style.css" rel="stylesheet" />
+    <title>Certificate - Oh Happy trip</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+    <link href="./style.css" rel="stylesheet" />
 </head>
 <body class="fondo">
-    <div
-      style="
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: rgb(183, 197, 224);
-        gap: 20px;
-        margin-top: 20px;
-      "
-    >
-      <a href="/" class="estilos"
-        ><h1">Oh Happy trip</h1></a
-      >
-      <a href="/disney.html" class="estilos" style=""> Disney </a>
-      <a href="/universal.html" class="estilos">Universal</a>
-      <a href="/cruceros.html" class="estilos"> Cruceros </a>
-      <a href="/playas.html" class="estilos"> Playas </a>
-      <a href="/certificate.html" class="header-btn"> Certificate </a>
+
+    <!-- EFECTO FUEGOS ARTIFICIALES -->
+    <div class="fuegos-artificiales">
+      <div class="fuego" style="left: 20%; animation-delay: 0s;"></div>
+      <div class="fuego" style="left: 50%; animation-delay: 1.5s;"></div>
+      <div class="fuego" style="left: 80%; animation-delay: 0.8s;"></div>
+      <div class="fuego" style="left: 35%; animation-delay: 2.2s;"></div>
     </div>
-<div class="carrusel-contenedor">
-  <div class="carrusel-fotos">
-    <img src="MK.avif" alt="Castillo Disney">
-    <img src="epic.jpg" alt="Viaje 2">
-    <img src="crucero-carru.webp" alt="Viaje 3">
-    <img src="playa-barco.webp" alt="Castillo Disney">
-  </div>
-</div>
-
-<p style="padding: 0.5rem; border: 2px; font-size: 20px; text-align: center;
-background-color: rgb(183, 197, 224);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 20px;">
-        ¡Presionael boton para certificarte como agente!
-      </p>
+    
+    <!-- HEADER CENTRADO -->
+    <div class="estiloHeader">
+      <a href="/" class="header-btn"><h1>Oh Happy trip</h1></a>
       
-      <div style="display: flex; justify-content: center; align-items: center; width: 100%; margin: 20px 0;">
-  
-  <a href="https://tr.ee/_pTHk9q0YZ" target="_blank" style="text-decoration: none;">
-    <img 
-      src="logo-oh.png" 
-      alt="Mis Redes" 
-      style="
-        width: 100px;
-        height: auto;
-        display: block; 
-        transition: transform 0.3s ease;
-        cursor: pointer;
-      "
-      onmouseover="this.style.transform='scale(1.1)'" 
-      onmouseout="this.style.transform='scale(1)'"
-    >
-  </a>
+      <div class="botones-nav">
+        <a href="/disney.html" class="estilos"> Disney </a>
+        <a href="/universal.html" class="estilos">Universal</a>
+        <a href="/cruceros.html" class="estilos"> Cruceros </a>
+        <a href="/playas.html" class="estilos"> Playas </a>
+        <!-- Pestaña Activa -->
+        <a href="/certificate.html" class="estilos" style="background: linear-gradient(135deg, rgba(89, 46, 113, 0.95), rgba(38, 208, 206, 0.95)); border-color: transparent; color: white; box-shadow: 0 0 15px rgba(38, 208, 206, 0.6);"> Certificate </a>
+      </div>
+    </div>
 
-</div>
+    <!-- CARRUSEL -->
+    <div class="carrusel-contenedor">
+      <div class="carrusel-fotos">
+        <img src="MK.avif" alt="Magic Kingdom">
+        <img src="uni-stdios.webp" alt="Epic Universe">
+        <img src="crucero1.webp" alt="Crucero 1">
+        <img src="playa-barco.webp" alt="Playa y barco">
+        <img src="MK.avif" alt="Magic Kingdom">
+      </div>
+    </div>
 
-</body>
+    <!-- INFORMACIÓN CERTIFICADOS -->
+    <div class="contenedor-tarjetas">
+      <div class="tarjeta-info">
+        <i class="fa-solid fa-graduation-cap" style="color: #BF953F;"></i>
+        <h3>Agentes Certificados</h3>
+        <p>Estamos graduados del Disney College of Knowledge y somos especialistas certificados por Universal Parks & Resorts. Conocemos los parques como nadie.</p>
+      </div>
+      
+      <div class="tarjeta-info">
+        <i class="fa-solid fa-handshake-angle" style="color: #FCF6BA;"></i>
+        <h3>Asesoría Gratuita</h3>
+        <p>Pagas exactamente lo mismo que comprando en la página oficial, pero te llevas nuestra experiencia, tips de viaje y planeación de itinerarios totalmente gratis.</p>
+      </div>
+
+      <div class="tarjeta-info">
+        <i class="fa-solid fa-shield-halved" style="color: #00e5ff;"></i>
+        <h3>Viaja Seguro</h3>
+        <p>Agencia autorizada y respaldada. Nos encargamos de reservas de hotel, vuelos, tickets y traslados para que tú solo te preocupes por empacar y disfrutar.</p>
+      </div>
+    </div> <!-- ESTE ES EL DIV QUE FALTABA -->
+   
+    <!-- BOTÓN DE ACCIÓN ELEGANTE -->
+    <div style="display: flex; justify-content: center; margin: 20px 0 60px 0; position: relative; z-index: 10;">
+      <a href="https://linktr.ee/Andylugoh.happytrip" target="_blank" class="btn-cotizar certificado">
+        <i class="fa-solid fa-award"></i> Certificate como Agente
+      </a>
+    </div>
+
+    <!-- CÓDIGO JAVASCRIPT PARA EFECTOS DEL MOUSE -->
+    <script>
+      // 1. POLVO DE TINKERBELL AL MOVER EL MOUSE
+      document.addEventListener("mousemove", function(e) {
+        if (Math.random() > 0.4) {
+          let chispa = document.createElement("span");
+          chispa.className = "chispa-magica";
+          chispa.style.left = e.clientX + "px";
+          chispa.style.top = e.clientY + "px";
+          
+          let tx = (Math.random() - 0.5) * 60 + "px"; 
+          let ty = (Math.random() * 60) + 20 + "px";  
+          chispa.style.setProperty("--tx", tx);
+          chispa.style.setProperty("--ty", ty);
+          
+          document.body.appendChild(chispa);
+          
+          setTimeout(() => {
+            chispa.remove();
+          }, 800);
+        }
+      });
+
+      // 2. FUEGO ARTIFICIAL AL HACER CLIC
+      document.addEventListener("click", function(e) {
+        let explosion = document.createElement("div");
+        explosion.className = "explosion-click";
+        
+        explosion.style.left = e.clientX + "px";
+        explosion.style.top = e.clientY + "px";
+        
+        document.body.appendChild(explosion);
+        
+        setTimeout(() => {
+          explosion.remove();
+        }, 800);
+      });
+    </script>
+
+    <!-- MENÚ FLOTANTE EXPANDIBLE -->
+    <div class="menu-flotante">
+      
+      <!-- Botón principal (Siempre visible) -->
+      <div class="btn-flotante-principal">
+        <i class="fa-solid fa-comments"></i>
+      </div>
+      
+      <!-- Redes que salen hacia arriba al pasar el mouse -->
+      <div class="redes-ocultas">
+        <a href="https://api.whatsapp.com/send?phone=525519647258" target="_blank" class="btn-flotante-red wa" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="https://instagram.com/andylugoh.happytrip" target="_blank" class="btn-flotante-red ig" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://tiktok.com/@andylugohappytrip" target="_blank" class="btn-flotante-red tk" title="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+        <a href="https://www.facebook.com/share/14GoXGc35Pu/?mibextid=wwXIfr" target="_blank" class="btn-flotante-red fb" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://www.youtube.com/@andrealugoh.happytrip" target="_blank" class="btn-flotante-red yt" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+      
+    </div>
+</body> 
 </html>
